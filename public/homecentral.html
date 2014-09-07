@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<h1><center>Home Central</center></h1>
+</head>
+<style>
+table,th,td,input
+{
+border:1px solid black;
+font-size:100%;
+}
+td.blink {
+    text-decoration: blink;
+}
+</style>
+<body background="/public/images/img1.png">
+  <table width="500" height="250">
+    <tr>Connected to BeanStalk Server...</tr>
+    <br><br>
+    <tr> <span 100%><td bgcolor = "blue" >List of Appliances</td></span> </tr>
+    <tr>
+      <td>
+        <table>
+          <tr><td bgcolor="Lime" class="blink">Ge Profile Dryer</td></tr>
+          <tr><td>GE Profile Washer</td></tr>
+          <tr><td>GE Profile Oven</td></tr>
+          <tr><td>GE Profile Refrigerator</td></tr>
+          <tr><td>GE Profile Water Heater</td></tr>
+        </table>
+      </td>
+      <td>
+          <form action="dryerStatus" method="get">
+            <input type="submit" value="Status" font-size=120%>
+          </form>
+      </td>
+      <td>
+          <form action="dryerStart" method="get">
+            <input type="submit" value="Start" font-size=120%>
+          </form>
+      </td>
+      <td>
+          <form action="dryerLightOn" method="get">
+            <input type="submit" value="LightOn" font-size=120%>
+          </form>
+      </td>
+      <td>
+          <form action="dryerLightOff" method="get">
+            <input type="submit" value="LightOff" font-size=120%>
+          </form>
+      </td>
+    </tr>
+    <tr><td><center>R2D2 Robot</center></td><td>Working...</td></tr>
+  </table>
+</body>
+
+</html>
